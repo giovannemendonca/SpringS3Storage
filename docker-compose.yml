@@ -1,0 +1,10 @@
+services:
+  db_postgres:
+    image: postgres:9-alpine
+    container_name: db_spring_s3
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: spring_s3
